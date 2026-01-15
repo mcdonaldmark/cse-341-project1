@@ -5,9 +5,10 @@
     "description": "Contacts API",
     "version": "1.0.0"
   },
-  "host": "project1-1q1c.onrender.com",
+  "host": "localhost:3001",
   "basePath": "/",
   "schemes": [
+    "http",
     "https"
   ],
   "paths": {
@@ -51,16 +52,19 @@
             "schema": {
               "type": "object",
               "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
                 "email": {
                   "example": "any"
                 },
-                "username": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "name": {
-                  "example": "any"
-                },
-                "ipaddress": {
+                "birthday": {
                   "example": "any"
                 }
               }
@@ -118,16 +122,19 @@
             "schema": {
               "type": "object",
               "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
                 "email": {
                   "example": "any"
                 },
-                "username": {
+                "favoriteColor": {
                   "example": "any"
                 },
-                "name": {
-                  "example": "any"
-                },
-                "ipaddress": {
+                "birthday": {
                   "example": "any"
                 }
               }
