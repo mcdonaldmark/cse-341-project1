@@ -1,33 +1,38 @@
 ### Test root route
-GET http://localhost:3000/
+GET http://localhost:3001/
 
 ### Get all contacts
-GET http://localhost:3000/contacts
+GET http://localhost:3001/contacts
 
 ### Get a single contact by ID
-GET http://localhost:3000/contacts/695e00bcd55b5f75c3ba5e29
+# Replace <CONTACT_ID> with an actual _id from your DB
+GET http://localhost:3001/contacts/695e00f2d55b5f75c3ba5e2b
 
-### pUT Contact
-PUT http://localhost:3000/contacts/695e00bcd55b5f75c3ba5e29 HTTP/1.1
+### Update Contact
+# Replace <CONTACT_ID> with an actual _id
+PUT http://localhost:3001/contacts/695e0f2d55b5f75c3ba5e2b
 Content-Type: application/json
 
 {
-    "email": "test@example.com",
-    "username": "test1@test.com",
-    "name": "Hello1",
-    "ipaddress": "04.121.168.53"
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "email": "jane@example.com",
+    "favoriteColor": "Red",
+    "birthday": "1992-05-15"
 }
 
 ### Create Contact
-POST http://localhost:3000/contacts/ HTTP/1.1
+POST http://localhost:3001/contacts
 Content-Type: application/json
 
 {
-    "email": "test@example.com",
-    "username": "test1@test.com",
-    "name": "Hello1",
-    "ipaddress": "04.121.168.53"
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@example.com",
+    "favoriteColor": "Blue",
+    "birthday": "1990-01-01"
 }
 
 ### Delete Contact
-DELETE http://localhost:3000/contacts/6967274345b01bf621a2fdcc
+# Replace <CONTACT_ID> with an actual _id
+DELETE http://localhost:3001/contacts/696b4c34294fc9ce5cc80310
